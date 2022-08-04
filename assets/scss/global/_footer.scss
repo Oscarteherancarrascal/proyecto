@@ -1,0 +1,21 @@
+footer { /*cambiar colores de la misma forma que el header*/
+    border: 5px solid #564180;
+    font-family: 'Josefin Sans', sans-serif; /*Esta letra es más cuadrada, me gusta*/
+    font-weight: bold;
+}
+.contenedor__footer {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: auto;
+    background-color:#5EFFBA;
+}
+.contenido__footer img {
+    margin: 0 45% 0 45%;
+}
+.contenido__footer {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: auto;
+    width: 250px;
+}

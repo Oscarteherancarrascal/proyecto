@@ -1,0 +1,78 @@
+@import "https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Nunito+Sans:ital,wght@1,200&display=swap";
+*{margin:0;
+padding:0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+.banner {
+	width: 100%;
+	height: auto;
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
+h1 {
+	background: linear-gradient(186deg, rgba(2,0,36,1) 0%, rgba(16,16,93,1) 35%, rgba(17,64,74,1) 100%); /*yo le daría este estilo*/
+    height: 8rem;
+	font-style: italic;
+	color: #5C78F2; /*blanco o el celeste claro de las letras del nav*/
+	font-family: 'Dancing Script', cursive; /*CAMBIAR A LETRA MÁS CUADRADA COMO SEÑALÉ ANTES - EL SHADOW ESTÁ MEDIO PASADO DE MODA*/
+	/*text-shadow: -7px 2px 7px rgba(92,242,208,0.99); */
+	text-align: center;
+	font-size: 60px;
+	line-height: 2; /*agregar esto para centrar verticalmente el texto*/
+}
+.subtitulos {
+	margin-left: 2%;
+	font-family: 'Dancing Script', cursive; /*cambiar letra*/
+	font-size: 20px;
+}
+.contenedor {
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-bottom: auto;
+	border: 5px solid #564180;
+}
+.contenido {
+	width: 250px;
+	height: 250px;
+	margin: 30px 30px 45px 30px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+}
+#wrapper {
+	border: 5px solid #564180;
+	height: auto;
+	width: auto;
+	display: grid;
+	grid-template-areas: "nuevos__Perifericos Nuevos__productos" "productos__perifericos Productos__componentes";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto 70px;
+	margin: 10px 0 10px 0;
+}
+#pie__seccion {
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+}
+.contenedor__fondo {
+	margin: 15px 15px 15px 15px;
+	display: block;
+	text-align: center;
+}
+.contenido__fondo {
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 90%;
+	margin-bottom: 1%;
+}
+
+/*DARLE ESTILO AL H3 QUE USAS PARA DARLE CANTIDAD A LOS PRODUCTOS. Alguna letra como josefin sans. Para despegarlo del h1, margin top de 1 0 2 rem.*/
