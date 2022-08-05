@@ -13,21 +13,25 @@ box-sizing: border-box;
 		width: 100%;
 	}
 }
-h1 {
-	background: linear-gradient(186deg, rgba(2,0,36,1) 0%, rgba(16,16,93,1) 35%, rgba(17,64,74,1) 100%); /*yo le daría este estilo*/
+.titulos {
+	background: linear-gradient(186deg, rgba(2,0,36,1) 0%, rgba(16,16,93,1) 35%, rgba(17,64,74,1) 100%);
+}
+h1{
     height: 8rem;
 	font-style: italic;
-	color: #5C78F2; /*blanco o el celeste claro de las letras del nav*/
-	font-family: 'Dancing Script', cursive; /*CAMBIAR A LETRA MÁS CUADRADA COMO SEÑALÉ ANTES - EL SHADOW ESTÁ MEDIO PASADO DE MODA*/
-	/*text-shadow: -7px 2px 7px rgba(92,242,208,0.99); */
+	color:rgb(0, 255, 242); 
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	font-size: 60px;
-	line-height: 2; /*agregar esto para centrar verticalmente el texto*/
+	line-height: 2; 
 }
-.subtitulos {
-	margin-left: 2%;
-	font-family: 'Dancing Script', cursive; /*cambiar letra*/
-	font-size: 20px;
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: italic;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	color: rgb(0, 255, 242);
+	font-size: 35px;
 }
 .contenedor {
 	width: auto;
@@ -38,6 +42,20 @@ h1 {
 	margin-bottom: auto;
 	border: 5px solid #564180;
 }
+.contenido {
+	&:hover {
+		.imagen {
+			-webkit-transform: scale(0.95);
+			transform: scale(0.95);
+		}
+	}
+}
+.imagen {
+	&:hover {
+		filter: opacity(.7);
+	}
+}
+
 .contenido {
 	width: 250px;
 	height: 250px;
@@ -53,7 +71,6 @@ h1 {
 	grid-template-areas: "nuevos__Perifericos Nuevos__productos" "productos__perifericos Productos__componentes";
 	grid-template-columns: 50% 50%;
 	grid-template-rows: auto auto 70px;
-	margin: 10px 0 10px 0;
 }
 #pie__seccion {
 	text-align: center;
